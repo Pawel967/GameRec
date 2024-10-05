@@ -1,0 +1,322 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\dtos\\reviewsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\dtos\\reviewsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\dtos\\piceoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\dtos\\piceoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\dtos\\gamedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\dtos\\gamedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\clients\\steamapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\clients\\steamapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\models\\priceoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\models\\priceoverview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\models\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\models\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\views\\game\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\views\\game\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\views\\game\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\views\\game\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_mvc\\game_mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48A473EB-7BEF-4068-98F1-AB8243D9E24B}|Game_MVC\\Game_MVC.csproj|solutionrelative:game_mvc\\game_mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|c:\\users\\pawe\u0142\\desktop\\5_backendreview\\game_api\\game_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41CD2F2F-549E-477A-BD76-93331BBCEF40}|Game_API\\Game_API.csproj|solutionrelative:game_api\\game_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SteamApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Clients\\SteamApiClient.cs",
+              "RelativeDocumentMoniker": "Game_API\\Clients\\SteamApiClient.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Clients\\SteamApiClient.cs",
+              "RelativeToolTip": "Game_API\\Clients\\SteamApiClient.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowDwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:15:25.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Game_MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:31:24.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\GameDetails.cs",
+              "RelativeDocumentMoniker": "Game_API\\Dtos\\GameDetails.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\GameDetails.cs",
+              "RelativeToolTip": "Game_API\\Dtos\\GameDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:18:12.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewSummary.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\ReviewSummary.cs",
+              "RelativeDocumentMoniker": "Game_API\\Dtos\\ReviewSummary.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\ReviewSummary.cs",
+              "RelativeToolTip": "Game_API\\Dtos\\ReviewSummary.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T17:09:24.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "Game_API\\Services\\GameService.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Services\\GameService.cs",
+              "RelativeToolTip": "Game_API\\Services\\GameService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:19:37.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Program.cs",
+              "RelativeDocumentMoniker": "Game_API\\Program.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Program.cs",
+              "RelativeToolTip": "Game_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:20:09.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\GameViewModel.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Models\\GameViewModel.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\GameViewModel.cs",
+              "RelativeToolTip": "Game_MVC\\Models\\GameViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:37:51.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PriceOverview.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\PriceOverview.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Models\\PriceOverview.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\PriceOverview.cs",
+              "RelativeToolTip": "Game_MVC\\Models\\PriceOverview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:38:06.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PiceOverview.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\PiceOverview.cs",
+              "RelativeDocumentMoniker": "Game_API\\Dtos\\PiceOverview.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Dtos\\PiceOverview.cs",
+              "RelativeToolTip": "Game_API\\Dtos\\PiceOverview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:18:52.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Game_MVC\\Controllers\\GameController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:36:29.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Game_API\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Game_API\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T18:20:32.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Game_MVC\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:38:13.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Game\\Details.cshtml",
+              "RelativeDocumentMoniker": "Game_MVC\\Views\\Game\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Game\\Details.cshtml",
+              "RelativeToolTip": "Game_MVC\\Views\\Game\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:42:25.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Game\\Search.cshtml",
+              "RelativeDocumentMoniker": "Game_MVC\\Views\\Game\\Search.cshtml",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Game\\Search.cshtml",
+              "RelativeToolTip": "Game_MVC\\Views\\Game\\Search.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:42:02.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Game_MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Program.cs",
+              "RelativeToolTip": "Game_MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:45:47.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Game_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Game_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T14:46:45.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Game_MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Game_MVC.csproj",
+              "RelativeDocumentMoniker": "Game_MVC\\Game_MVC.csproj",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_MVC\\Game_MVC.csproj",
+              "RelativeToolTip": "Game_MVC\\Game_MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-29T14:36:05.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Game_API.csproj",
+              "DocumentMoniker": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Game_API.csproj",
+              "RelativeDocumentMoniker": "Game_API\\Game_API.csproj",
+              "ToolTip": "C:\\Users\\Pawe\u0142\\Desktop\\5_backendreview\\Game_API\\Game_API.csproj",
+              "RelativeToolTip": "Game_API\\Game_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-28T18:16:37.879Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

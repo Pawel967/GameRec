@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "Game_API.Controllers.GameController",
+    "Method": "GetGameDetails",
+    "RelativePath": "api/Game/{appId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Game_API.Controllers.GameController",
+    "Method": "SearchGames",
+    "RelativePath": "api/Game/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
