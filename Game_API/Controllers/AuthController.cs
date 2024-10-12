@@ -66,12 +66,12 @@ namespace Game_API.Controllers
         [HttpPut("update/{userId}")]
         public async Task<ActionResult<UserDto>> UpdateUser(Guid userId, UpdateUserDto updateUserDto)
         {
-            var currentUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var isAdmin = User.IsInRole("Admin");
 
-            if (!isAdmin && currentUser != userId.ToString())
+            if (!isAdmin && currentUserId != userId.ToString())
             {
-                return Forbid("You can only update your own data");
+                return StatusCode(StatusCodes.Status403Forbidden, "You can only update your own data");
             }
 
             try
@@ -93,12 +93,12 @@ namespace Game_API.Controllers
         [HttpGet("{userId}")]
         public async Task<ActionResult<UserDto>> GetUser(Guid userId)
         {
-            var currentUser = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var isAdmin = User.IsInRole("Admin");
 
-            if (!isAdmin && currentUser != userId.ToString())
+            if (!isAdmin && currentUserId != userId.ToString())
             {
-                return Forbid("You can only view your own data");
+                return StatusCode(StatusCodes.Status403Forbidden, "You can only view your own data");
             }
 
             try
