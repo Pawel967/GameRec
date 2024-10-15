@@ -56,5 +56,34 @@ namespace Game_MVC.Services
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<UserDto>();
         }
+
+        public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
+        {
+            var client = CreateClientWithAuth();
+            var response = await client.GetAsync("api/Auth/users");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<IEnumerable<UserDto>>();
+        }
+
+        public async Task<bool> DeleteUserAsync(Guid userId)
+        {
+            var client = CreateClientWithAuth();
+            var response = await client.DeleteAsync($"api/Auth/delete/{userId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return false;
+            }
+            else
+            {
+                // This will throw an exception for unexpected status codes
+                response.EnsureSuccessStatusCode();
+                return false; // This line will never be reached, but it's needed to satisfy the compiler
+            }
+        }
     }
 }

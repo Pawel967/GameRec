@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\Desktop\\9_autentykacjanafroncie\\Game_MVC\\Game_MVC.csproj": {}
+    "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\Game_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\Desktop\\9_autentykacjanafroncie\\Game_MVC\\Game_MVC.csproj": {
+    "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\Game_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\9_autentykacjanafroncie\\Game_MVC\\Game_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\Game_MVC.csproj",
         "projectName": "Game_MVC",
-        "projectPath": "C:\\Users\\Paweł\\Desktop\\9_autentykacjanafroncie\\Game_MVC\\Game_MVC.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\Game_MVC.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Desktop\\9_autentykacjanafroncie\\Game_MVC\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
