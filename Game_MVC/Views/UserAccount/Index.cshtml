@@ -1,0 +1,28 @@
+﻿@model Game_MVC.Dtos.UserDto
+@{
+    ViewData["Title"] = "My Account";
+}
+
+<h2>My Account</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class="col-sm-3">Username:</dt>
+            <dd class="col-sm-9">@Model.Username</dd>
+
+            <dt class="col-sm-3">Email:</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Roles:</dt>
+            <dd class="col-sm-9">@string.Join(", ", Model.Roles)</dd>
+        </dl>
+
+        <a asp-action="Edit" class="btn btn-primary">Edit Account</a>
+    </div>
+</div>
