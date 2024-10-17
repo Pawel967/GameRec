@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aAxdY1o/P/M=",
+  "dgSpecHash": "HXylVEjgby0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Desktop\\10_GameRec\\Game_MVC\\Game_MVC.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\Desktop\\11_GameRec\\Game_MVC\\Game_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.1\\microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",

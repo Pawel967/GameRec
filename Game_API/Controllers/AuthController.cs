@@ -113,15 +113,15 @@ namespace Game_API.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPost("assign-role")]
+        [HttpPost("assign-role/{userId}/{roleName}")]
         public async Task<ActionResult> AssignRole(Guid userId, string roleName)
         {
             var result = await _authService.AssignRoleAsync(userId, roleName);
             if (result)
             {
-                return Ok();
+                return Ok($"Role '{roleName}' assigned successfully to '{userId}'.");
             }
-            return BadRequest("Failed to assign role");
+            return NotFound("User or role not found.");
         }
 
         [Authorize(Roles = "Admin")]
@@ -137,6 +137,14 @@ namespace Game_API.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("roles")]
+        public async Task<ActionResult<IEnumerable<string>>> GetAllRoles()
+        {
+            var roles = await _authService.GetAllRolesAsync();
+            return Ok(roles);
         }
     }
 }

@@ -180,15 +180,21 @@ namespace Game_API.Services
 
         public async Task<bool> AssignRoleAsync(Guid userId, string roleName)
         {
-            var user = await _context.Users.FindAsync(userId);
-            var role = await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
-
-            if (user == null || role == null)
+            var user = await _context.Users.Include(u => u.Roles).FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null)
             {
                 return false;
             }
 
-            user.Roles.Add(role);
+            var newRole = await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
+            if (newRole == null)
+            {
+                return false;
+            }
+
+            user.Roles.Clear();
+            user.Roles.Add(newRole);
+
             await _context.SaveChangesAsync();
             return true;
         }
@@ -206,6 +212,11 @@ namespace Game_API.Services
                 Email = u.Email,
                 Roles = u.Roles.Select(r => r.Name).ToList()
             });
+        }
+
+        public async Task<IEnumerable<string>> GetAllRolesAsync()
+        {
+            return await _context.Roles.Select(r => r.Name).ToListAsync();
         }
 
         private string GenerateJwtToken(User user)
