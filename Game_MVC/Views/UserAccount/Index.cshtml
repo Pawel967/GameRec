@@ -1,14 +1,6 @@
-﻿@model Game_MVC.Dtos.UserDto
-@{
-    ViewData["Title"] = "My Account";
-}
+﻿<h2>My Account</h2>
 
-<h2>My Account</h2>
-
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
+<div id="notificationArea"></div>
 
 <div class="row">
     <div class="col-md-6">
@@ -23,6 +15,57 @@
             <dd class="col-sm-9">@string.Join(", ", Model.Roles)</dd>
         </dl>
 
-        <a asp-action="Edit" class="btn btn-primary">Edit Account</a>
+        <button onclick="openEditModal()" class="btn btn-primary">Edit Account</button>
     </div>
 </div>
+
+<!-- Edit User Modal -->
+<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editUserModalLabel">Edit User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openEditModal() {
+            $('#editUserModal .modal-body').load('@Url.Action("Edit", "UserAccount")', function () {
+                $('#editUserModal').modal('show');
+            });
+        }
+
+        $(document).ready(function () {
+            $('.btn-close').click(function () {
+                $('#editUserModal').modal('hide');
+            });
+
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                showNotification(successMessage, 'success');
+            }
+        });
+
+        function showNotification(message, type) {
+            var alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+            var notification = `
+                        <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+                            ${message}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    `;
+            $('#notificationArea').html(notification);
+
+            setTimeout(function () {
+                $('.alert').alert('close');
+            }, 5000);
+        }
+    </script>
+}

@@ -42,7 +42,7 @@ namespace Game_MVC.Controllers
                     Username = user.Username,
                     Email = user.Email
                 };
-                return View(updateUserDto);
+                return PartialView(updateUserDto);
             }
             catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
             {
@@ -55,7 +55,7 @@ namespace Game_MVC.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(updateUserDto);
+                return PartialView(updateUserDto);
             }
 
             try
@@ -63,7 +63,7 @@ namespace Game_MVC.Controllers
                 var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
                 var updatedUser = await _authService.UpdateUserInfoAsync(userId, updateUserDto);
                 TempData["SuccessMessage"] = "Your account has been updated successfully.";
-                return RedirectToAction(nameof(Index));
+                return Json(new { success = true });
             }
             catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
             {
@@ -71,8 +71,7 @@ namespace Game_MVC.Controllers
             }
             catch (HttpRequestException)
             {
-                ModelState.AddModelError(string.Empty, "An error occurred while updating your account. Please try again.");
-                return View(updateUserDto);
+                return Json(new { success = false, error = "An error occurred while updating your account. Please try again." });
             }
         }
     }

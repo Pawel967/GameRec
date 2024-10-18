@@ -1,0 +1,54 @@
+﻿@model Game_MVC.Dtos.UserDto
+
+<h4 class="mb-4">Manage Roles for @Model.Username</h4>
+
+<!-- First div for User Details -->
+<div class="mb-5">
+    <h5 class="mb-3">User Details</h5>
+    <dl class="row">
+        <dt class="col-sm-3">Username:</dt>
+        <dd class="col-sm-9">@Model.Username</dd>
+        <dt class="col-sm-3">Email:</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+        <dt class="col-sm-3">Current Roles:</dt>
+        <dd class="col-sm-9">@string.Join(", ", Model.Roles)</dd>
+    </dl>
+</div>
+
+<!-- Second div for Assign Role -->
+<div class="mb-5">
+    <h5 class="mb-3">Assign Role</h5>
+    <form id="assignRoleForm" asp-action="AssignRole" method="post">
+        <input type="hidden" name="userId" value="@Model.Id" />
+        <div class="form-group mb-4">
+            <label for="roleName" class="font-weight-bold mb-2">Select Role:</label>
+            <select name="roleName" id="roleName" class="form-control">
+                @foreach (var role in ViewBag.AvailableRoles)
+                {
+                    <option value="@role">@role</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Assign Role</button>
+    </form>
+</div>
+
+<script>
+    $(function () {
+        $('#assignRoleForm').submit(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: this.action,
+                type: this.method,
+                data: $(this).serialize(),
+                success: function (result) {
+                    $('#manageRolesModal').modal('hide');
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    alert('An error occurred while assigning the role.');
+                }
+            });
+        });
+    });
+</script>

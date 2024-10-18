@@ -85,5 +85,34 @@ namespace Game_MVC.Services
                 return false; // This line will never be reached, but it's needed to satisfy the compiler
             }
         }
+
+        public async Task<bool> AssignRoleAsync(Guid userId, string roleName)
+        {
+            var client = CreateClientWithAuth();
+            var response = await client.PostAsync($"api/Auth/assign-role/{userId}/{roleName}", null);
+
+            if (response.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                return false;
+            }
+            else
+            {
+                // This will throw an exception for unexpected status codes
+                response.EnsureSuccessStatusCode();
+                return false; // This line will never be reached, but it's needed to satisfy the compiler
+            }
+        }
+
+        public async Task<IEnumerable<string>> GetAvailableRolesAsync()
+        {
+            var client = CreateClientWithAuth();
+            var response = await client.GetAsync("api/Auth/roles");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<IEnumerable<string>>();
+        }
     }
 }

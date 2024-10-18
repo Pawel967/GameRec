@@ -4,20 +4,27 @@
     ViewData["Title"] = "User List";
 }
 
-<h2>User List</h2>
+<h2 class="mb-4">User List</h2>
 
 @if (TempData["SuccessMessage"] != null)
 {
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 }
+
 
 @if (TempData["ErrorMessage"] != null)
 {
-    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 }
 
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="thead-dark">
         <tr>
             <th>Username</th>
             <th>Email</th>
@@ -33,7 +40,8 @@
                 <td>@user.Email</td>
                 <td>@string.Join(", ", user.Roles)</td>
                 <td>
-                    <a asp-action="EditUser" asp-route-id="@user.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <button onclick="openEditModal('@user.Id')" class="btn btn-primary btn-sm mr-2">Edit</button>
+                    <button onclick="openManageRolesModal('@user.Id')" class="btn btn-info btn-sm mr-2">Manage Roles</button>
                     <form asp-action="DeleteUser" asp-route-id="@user.Id" method="post" style="display: inline;">
                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
                     </form>
@@ -42,3 +50,55 @@
         }
     </tbody>
 </table>
+
+<!-- Edit User Modal -->
+<div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editUserModalLabel">Edit User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Manage Roles Modal -->
+<div class="modal fade" id="manageRolesModal" tabindex="-1" role="dialog" aria-labelledby="manageRolesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="manageRolesModalLabel">Manage Roles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openEditModal(userId) {
+            $('#editUserModal .modal-body').load('/Admin/EditUser/' + userId, function () {
+                $('#editUserModal').modal('show');
+            });
+        }
+
+        function openManageRolesModal(userId) {
+            $('#manageRolesModal .modal-body').load('/Admin/ManageRoles/' + userId, function () {
+                $('#manageRolesModal').modal('show');
+            });
+        }
+
+        $(document).ready(function () {
+            $('.close').click(function () {
+                $(this).closest('.modal').modal('hide');
+            });
+        });
+    </script>
+}

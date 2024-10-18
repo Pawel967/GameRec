@@ -29,7 +29,8 @@ namespace Game_MVC.Controllers
                 Username = user.Username,
                 Email = user.Email
             };
-            return View(updateUserDto);
+            ViewBag.UserId = id;
+            return PartialView(updateUserDto);
         }
 
         [HttpPost]
@@ -74,6 +75,44 @@ namespace Game_MVC.Controllers
                 TempData["ErrorMessage"] = "An error occurred while deleting the user account. Please try again.";
             }
             return RedirectToAction(nameof(UserList));
+        }
+
+        public async Task<IActionResult> ManageRoles(Guid id)
+        {
+            var user = await _authService.GetUserInfoAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var availableRoles = await _authService.GetAvailableRolesAsync();
+
+            ViewBag.AvailableRoles = availableRoles;
+            return PartialView(user);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AssignRole(Guid userId, string roleName)
+        {
+            try
+            {
+                var result = await _authService.AssignRoleAsync(userId, roleName);
+                if (result)
+                {
+                    TempData["SuccessMessage"] = $"Role '{roleName}' has been assigned successfully.";
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Failed to assign role. The user or role may not exist.";
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log the exception details
+                Console.WriteLine($"Error assigning role: {ex.Message}");
+                TempData["ErrorMessage"] = "An error occurred while assigning the role. Please try again.";
+            }
+            return RedirectToAction(nameof(ManageRoles), new { id = userId });
         }
     }
 }
