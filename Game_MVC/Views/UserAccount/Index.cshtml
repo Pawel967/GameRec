@@ -1,23 +1,41 @@
-﻿<h2>My Account</h2>
+﻿<div id="notificationArea"></div>
 
-<div id="notificationArea"></div>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="text-center mb-0">Account Information</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <dl class="row">
+                            <dt class="col-sm-4 text-muted"><i class="fas fa-user me-2"></i>Username:</dt>
+                            <dd class="col-sm-8">@Model.Username</dd>
 
-<div class="row">
-    <div class="col-md-6">
-        <dl class="row">
-            <dt class="col-sm-3">Username:</dt>
-            <dd class="col-sm-9">@Model.Username</dd>
+                            <dt class="col-sm-4 text-muted"><i class="fas fa-envelope me-2"></i>Email:</dt>
+                            <dd class="col-sm-8">@Model.Email</dd>
 
-            <dt class="col-sm-3">Email:</dt>
-            <dd class="col-sm-9">@Model.Email</dd>
-
-            <dt class="col-sm-3">Roles:</dt>
-            <dd class="col-sm-9">@string.Join(", ", Model.Roles)</dd>
-        </dl>
-
-        <button onclick="openEditModal()" class="btn btn-primary">Edit Account</button>
+                            <dt class="col-sm-4 text-muted"><i class="fas fa-users me-2"></i>Roles:</dt>
+                            <dd class="col-sm-8">
+                                @foreach (var role in Model.Roles)
+                                {
+                                    <span class="badge bg-secondary me-1">@role</span>
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-md-end mt-3 mt-md-0">
+                        <button onclick="openEditModal()" class="btn btn-primary">
+                            <i class="fas fa-edit me-2"></i>Edit Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 
 <!-- Edit User Modal -->
 <div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
@@ -68,4 +86,5 @@
             }, 5000);
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 }
